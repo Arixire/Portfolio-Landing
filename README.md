@@ -3,6 +3,9 @@ My landing website to link new projects and hold a generic cover letter and resu
 Initital iteration had a fake log in page deleted prior to upload due to the confusion caused by initial testing in which beta users didnt click past home page assuming that they couldn't because of the dummy log in box.
 Color scheme changed and diagonal boxes deleted due to bad translation into mobile format prior to upload
 
-/* all additional notes take place after upload*/
+
+**For Better organization example please see the AC3 project also built prior to upload but with better organization discipline**
+
+**All additional notes take place after upload **
 
 
