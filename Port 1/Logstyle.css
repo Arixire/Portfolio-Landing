@@ -1,0 +1,43 @@
+body{
+    background-color: #323436;
+}
+#taco{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:#323436;
+   
+    
+}
+button{
+    position: relative;
+    left:50%;
+    margin-top: 1.25em;
+    transform: translate(-50%,-50%);
+    background-color: #69747c;
+    color:#84dd63;
+}   
+
+ 
+::placeholder{
+    color:#6baa75;
+    text-align: center;
+    margin:0;
+    padding:0;
+
+}
+footer{
+    position:fixed;
+    left:50%;
+    top:95%;
+    transform: translate(-50%, -50%);
+    color:#84dd63;
+}
+header{
+    opacity: 0;
+}
+.light-mode{
+    background-color: aliceblue;
+    color:rgb(4, 4, 61);
+  }

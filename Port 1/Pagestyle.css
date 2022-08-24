@@ -1,0 +1,231 @@
+#topnav {
+  background-color: #191516;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0.3125em;
+  height: 1.875em;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 1.5625em 0 #ab2346;
+  z-index: 2;
+  }
+  
+  .active {
+    text-transform: uppercase;
+    text-decoration: none;
+        color: #ffffff;
+    padding-left: 0.125em;
+    padding-right: 0.125em;
+    
+    margin-left: 1.625em;
+  }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #03f7eb;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 0.9375em;
+}
+.sidenav a {
+  padding: 1.125em 0.5em 0.5em 0.5em;
+  text-decoration: none;
+  font-size: 1.125em;
+  color: #e9072b;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top:-10%;
+  font-size: 2.25em;
+  margin-right: 3.125em;
+  left: 50%;
+}
+#main{
+  display:none;
+}
+a{
+  display:inline;
+  color: #68a2b9;
+  text-decoration: none;
+  margin:1.25em;
+}
+body{
+  margin-top: 10%;
+  background-color: #68a2b9;
+}
+p{
+  margin-top: 5%;
+  background-color: #859db6;
+}
+#title{
+  text-align: center;
+  text-decoration: underline;
+}
+ #open{
+  background: rgb(0,22,40);
+  color:#ffffff;
+  margin: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  
+ 
+ }
+  #mid {
+    background: rgb(0,22,40);
+      color: #ffffff;
+      padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+ #close{
+  background: rgb(0,22,40);
+  
+  color: #ffffff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+ }
+  body {
+      font: 16px;
+      color:#ffffff;
+ }
+ #between{
+  padding: 5rem 20%;
+  color: #ffffff;}
+  #job{
+    text-align: center;
+  }
+  #dates{text-align: center;}
+  .l1{
+    display:block;
+    margin-bottom: 0.3125em;
+    border-bottom: 0.0625em solid black}
+  #l2{    display:block;
+    margin-bottom: 0.3125em;
+    border-bottom: 0.0625em solid black}
+  #l3{    display:block;
+    margin-bottom: 0.3125em;
+    border-bottom: 0.0625em solid black}
+  #l4{    display:block;
+    margin-bottom: 0.3125em;
+    border-bottom: 0.0625em solid black}
+  #l5{    display:block;
+    margin-bottom: 0.3125em;
+    border-bottom: 0.0625em solid black;}
+  #l6{    display:block;
+    margin-bottom: 0.3125em;
+    border-bottom: 0.0625em solid black}
+  #uni{text-align: center;}
+#info{
+  text-align: center;
+}
+/*phone and tablet style*/
+@media only screen and (max-width: 62em) {
+  #myLinks{
+    display:none;
+  }
+#main {
+  display:block;
+  position:absolute;
+  right:0;
+  transition: margin-right .5s;
+  padding-top: 0;
+  padding-right: 0.625em;
+  opacity:100%;
+  color:rgb(255, 254, 254);
+}
+}
+ /*carousel*/
+ #slide{
+  position:absolute;
+  left:50%;
+  top: 12.5em;
+  transform: translate(-50%);}
+  @-webkit-keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-15.625em * 6));
+   }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-15.625em * 6));
+   }
+}
+.slider {
+    height: 12.5em;
+    overflow: hidden;
+    width: 15.625em;
+}
+.slider::before, .slider::after {
+    height: 12.5em;
+    position: absolute;
+    width: 12.5em;
+}
+  .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+   }
+   .slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 45s linear infinite;
+    display: flex;
+    
+}
+#projects{
+  display:grid;
+  justify-items: center;
+}
+container{ 
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  justify-items: center;
+  text-align: center;
+}
+container #thumbnail{
+  height:250px;
+  width:250px;
+  margin-top: 10px;
+  
+}
+#ptitle{
+  text-decoration: underline;
+  font-size: 24px;
+}
+#description{
+  margin-bottom:10px;
+  font-size:16px;
+}
